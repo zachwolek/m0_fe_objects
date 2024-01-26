@@ -19,18 +19,32 @@ var foods = {
 // you created above:
 // YOUR CODE HERE
 
+console.log (Object.keys(foods));
+
+
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+
+console.log (Object.values(foods));
+
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log (Object.values(foods)[1]);
+
+
+
+
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
 
+foods.bread = 48; 
+console.log (Object.keys(foods));
+console.log (Object.values(foods)); 
 
 // -------------------
 // Part 2: Email
@@ -45,14 +59,24 @@ var foods = {
 
 // Write code that logs your email object to the terminal.
 
+var email = {
+  sender: "financial@turing.edu",
+  subject: "Where is your money?",
+  attachment: true
+}
+
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
 
+console.log (Object.keys(email)); 
+
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log (Object.values(email));
+
 
 
 // -------------------
@@ -103,3 +127,32 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+var email = ["Turing School", "Inspyr Gym", "Popeye's Chicken", "Mom"];
+
+
+var email = [
+{
+  sender: "financial@turing.edu",
+  subject: "Where is your money?",
+  attachment: true
+},
+{
+  sender: "events@insypr.com",
+  subject: "Upcoming classes and events",
+  attachment: true,
+},
+{
+  sender: "LoveThatChicken@popeyes.com",
+  subject: "We haven't seen you in a while",
+  attachment: true,
+},
+{
+  sender: "MomWolek@gmail.com",
+  subject: "Can you pick up some Popeye's?",
+  attachment: false, 
+}
+]
+
+console.log(email);
+console.log(email[2]);
